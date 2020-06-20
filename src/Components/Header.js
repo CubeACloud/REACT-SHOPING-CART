@@ -1,19 +1,22 @@
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import gsap, { Power2, Back } from 'gsap'
+import React from 'react'
+import { Link } from 'react-router-dom';
+import gsap, {Power2 , Back} from 'gsap'
+
 
 const Header = () => {
     useEffect(() => {
-        gsap.to("body", 0, { css: { visibility: "visible" } });
+        gsap.to ('body', 0, {css : {visibility : 'visible'}});
         const tl = gsap.timeline()
 
         tl.from('.link', 1.2, {
             x: 300,
-            ease: 'Power3.easeOut',
+            ease: 'power3.easeout',
             stagger: {
-                amount: 0.3
+                amount: 0.3 
             },
+
         })
+
         tl.from('.line', 0.9, {
             opacity: 0,
             y: 70,
@@ -21,29 +24,32 @@ const Header = () => {
             stagger: 0.3
         })
 
-        tl.from('.card', 0.3, {
+        tl.from('.card' , 0.3 , {
             autoAlpha: 0,
             opacity: 0,
-            ease: Power2.easeInOut,
+            ease: Power2.easeIn,
         })
+
     }, [])
-    return (
-        <nav className="header">
-            <div className="container row space-between v-center">
-                <div className="logo row">
-                    <img src={require('../images/download.png')} alt="cart" />
-                    <h2>Shopping Cart</h2>
-                </div>
-                <div className="nav-routes">
-                    <ul className="row v-center">
-                        <Link className="link" to='/'>Home</Link>
-                        <Link className="link" to='/cart'>Cart</Link>
-                        <Link className="link" to='/contact'>Contact</Link>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    
+    
+    return(
+
+       <nav className="header">
+    <div className="container row space-between v-center">
+        <div className="logo row">
+            <img/>
+            <h2>Shoping Cart</h2>
+        </div>
+   
+        <div className="nav-routes">
+            <ul>
+                <Link className="link">Home</Link>
+                <Link className="link">Cart</Link>
+                <Link className="link">Contact</Link>
+            </ul>
+        </div>
+        </div>
+       </nav>
     )
 }
-
-export default Header
