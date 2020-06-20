@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap");
+@import "./components/header.scss";
+@import "./components/banner.scss";
+@import "./components/cases.scss";
+@import "./components/item.scss";
+@import "./components/cart.scss";
+
+$black: #000000;
+$white: #ffffff;
+
+body,
+html {
+    visibility: hidden;
+    user-select: none;
+    background: $white;
+    overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 0 16px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #333;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        height: 40px;
+        padding: 4px;
+        width: 90px;
+        transition: 0.5s;
+        &:hover {
+            color: #000000;
+            background: #ccc;
+        }
+    }
+}
