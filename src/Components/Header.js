@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import gsap, {Power2 , Back} from 'gsap'
 
@@ -44,12 +44,14 @@ const Header = () => {
    
         <div className="nav-routes">
             <ul>
-                <Link className="link">Home</Link>
-                <Link className="link">Cart</Link>
-                <Link className="link">Contact</Link>
+                <Link className="link "to='/'>Home</Link>
+                <Link className="link" to='/cart'>Cart</Link>
+                {/* <Link className="link" to='/'>Contact</Link> */}
             </ul>
         </div>
         </div>
        </nav>
     )
 }
+
+export default Header;

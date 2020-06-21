@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { GlobalContext } from '../Context/GlobalContext'
 const Cart = () => {
     const {cart , removeFromCart , clearCart } = useContext(GlobalContext)
@@ -32,7 +32,7 @@ const Cart = () => {
                 </h4>
                 <span>Rs.{item.price}</span>
                 </div>
-                <button className='btn-del' onClick={() => {removeFromCart(item, id) }}>Delete </button>
+                <button className='btn-del' onClick={() => {removeFromCart(item.id) }}>Delete </button>
             </div>
         </div>
 
