@@ -5,7 +5,7 @@ import Item from './Items/Item'
 const Home = () => {
     return (
         <>
-            <Banner />
+            {/* <Banner /> */}
             <Item />
         </>
     )

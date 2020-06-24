@@ -31,14 +31,14 @@ const Header = () => {
         <nav className="header">
             <div className="container row space-between v-center">
                 <div className="logo row">
-                    <img src={require('../images/download.png')} alt="cart" />
-                    <h2>Shopping Cart</h2>
+                    <img src='http://vip-flags.com/wp-content/uploads/2015/07/logo-flag1.png'alt="cart" />
+                    {/* <h2>Shopping Cart</h2> */}
                 </div>
                 <div className="nav-routes">
                     <ul className="row v-center">
                         <Link className="link" to='/'>Home</Link>
                         <Link className="link" to='/cart'>Cart</Link>
-                        <Link className="link" to='/contact'>Contact</Link>
+                        {/* <Link className="link" to='/contact'>Contact</Link> */}
                     </ul>
                 </div>
             </div>

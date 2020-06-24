@@ -4,7 +4,7 @@ const Banner = () => {
 
     return (
         <section className="banner-section">
-            <div className="container">
+            {/* <div className="container">
                 <div className="col">
                     <div className="line">
                         <span>Creating Shopping Cart in React</span>
@@ -13,7 +13,7 @@ const Banner = () => {
                         <span>Using Context API</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }

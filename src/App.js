@@ -4,7 +4,7 @@ import Header from './Components/Header';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Cart from './Components/Cart';
 import Home from './Components/Home';
-import Contact from './Components/Contact';
+// import Contact from './Components/Contact';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Route path='/' exact component={Home} />
         <Route exact path='/cart' component={Cart} />
-        <Route path='/contact' exact component={Contact} />
+        {/* <Route path='/contact' exact component={Contact} /> */}
       </Router>
     </div>
 
