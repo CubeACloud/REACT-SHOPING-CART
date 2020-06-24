@@ -10,7 +10,7 @@ const Cart = () => {
             <div className="amt">
                 <span className="total-amt"> <span className="total">Total Amount</span> Rs.{totalAmount}</span>
             </div>
-            {cart.length === 0 ? (<div className="empty">Cart Empty, maybe start adding some items :)</div>) : cart.map((item, i) =>
+            {cart.length === 0 ? (<div className="empty">Cart is Empty</div>) : cart.map((item, i) =>
                 <div className="cart-info" key={i}>
                     <div className="container row v-center">
                         <div>
